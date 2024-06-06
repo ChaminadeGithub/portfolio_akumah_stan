@@ -1,0 +1,63 @@
+/* Style pour la section CV */
+#cv-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Style pour le conteneur du bouton */
+.download-button-container {
+    margin-top: 1rem;
+}
+
+/* Style pour le bouton de téléchargement */
+.download-button {
+    background-color: var(--primary-color, #007BFF); /* Défaut si var(--primary-color) n'est pas défini */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: var(--primary-dark, #0056b3); /* Défaut si var(--primary-dark) n'est pas défini */
+}
+
+/* Mode sombre pour le bouton de téléchargement */
+.dark-mode .download-button {
+    background-color: var(--primary-dark, #0056b3); /* Défaut si var(--primary-dark) n'est pas défini */
+}
+
+.dark-mode .download-button:hover {
+    background-color: #444;
+}
+
+/* Style pour l'intégration du PDF */
+embed {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Mode sombre pour l'intégration du PDF */
+.dark-mode embed {
+    border: 1px solid #444;
+}
+
+/* Style général du corps */
+body {
+    background-color: grey;
+    color: #333; /* Couleur de texte par défaut */
+}
+
+/* Mode sombre pour le corps */
+.dark-mode {
+    background-color: #121212;
+    color: #ddd;
+}
